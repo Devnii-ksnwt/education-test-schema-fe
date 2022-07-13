@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <!-- Script -->
+    <script type="text/javascript">
+        function validation(){
+          var textValidation = /^[a-zA-Z! ]+$/;
+          var name = document.getElementById("nama");
+          if (name.value.match(textValidation)) {
+              alert("Sistem memeriksa data anda valid dengan ketentuan kami dengan inputan hallo " + namas.value + " selamat datang " );
+          } else {
+              alert("Sistem kami menolak untuk inputan berisi angka!");
+              name.value="";
+              name.focus();
+              return false;
+          }
+        }
+        </script>
+</head>
+<body style="margin-left: 30px; margin-top: 30px; font-family: 'Times New Roman', Times, serif;">
+    <!-- Form -->
+    Nama : <input type="text" id="nama">
+    <button onclick="validation()"> Validasi </button>
+</body>
+</html>
